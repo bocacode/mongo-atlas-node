@@ -25,7 +25,7 @@ function getAllMovies() {
     .catch(err => console.log('could not get all movies', err))
 }
 
-// getAllMovies()
+getAllMovies()
 
 function createMovie() {
   const newMovie = new Movie({
@@ -40,7 +40,7 @@ function createMovie() {
     .catch(err => console.log('movie was not added', err))
 }
 
-// createMovie()
+createMovie()
 
 function getAllMoviesCount() {
   Movie.find()
@@ -49,7 +49,7 @@ function getAllMoviesCount() {
     .catch(err => console.log(err))
 }
 
-// getAllMoviesCount()
+getAllMoviesCount()
 
 function getMoviesFiltered() {
   Movie.find()
@@ -59,5 +59,3 @@ function getMoviesFiltered() {
     .catch(err => console.log(err))
 }
 getMoviesFiltered()
-
-
